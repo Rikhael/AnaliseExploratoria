@@ -12,46 +12,45 @@ Em seguida, vemos que a maior parte das pessoas nessa base não apresentam reinc
 \
 
 **Média** - a soma de todas as observações dividida pelo número de observações
-$$
-\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
-$$
+
+$$\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i$$
+
 
 **Coeficiente de correlação** - mede a força e a direção da relação linear entre duas variáveis
-$$
-r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}
-{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2 \sum_{i=1}^{n} (y_i - \bar{y})^2}}
-$$
+
+$$r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}
+{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2 \sum_{i=1}^{n} (y_i - \bar{y})^2}}$$
+
 
 **Mediana** - o valor central do conjunto de dados ordenados
-$$
-\text{Mediana} =
+
+$$\text{Mediana} =
 \begin{cases}
 x_{\left(\frac{n+1}{2}\right)}, & \text{se } n \text{ é ímpar} \\
 \\
 \frac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2}, & \text{se } n \text{ é par}
-\end{cases}
-$$
+\end{cases}$$
+
 **Variância** - mede o quanto os valores de um conjunto de dados se afastam da média\
 populacional:\
-$$
-\sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2
-$$
+
+$$\sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2$$
+
 \
 amostral:\
-$$
-s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2
-$$
+
+$$s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2$$
+
 **Desvio Padrão** - o grau médio de dispersão em torno dos valores da média\
 populacional:\
-$$
-\sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}
-$$
+
+$$\sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}$$
 \
 amostral:\
-$$
-s = \sqrt{\frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2}
-$$
+
+$$s = \sqrt{\frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2}$$
+
 **Amplitude** - a diferença entre o maior e o menor valor de um conjunto de dados\
-$$
-A = x_{\max} - x_{\min}
-$$
+
+$$A = x_{\max} - x_{\min}$$
+
