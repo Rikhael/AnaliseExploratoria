@@ -17,7 +17,7 @@ miss_var_summary(dados) #Aparentemente nenhum dado faltante
 
 library(ggplot2)#Pacote para construção dos gráficos
 #Histograma da variável Idade.
-ggplot(dados, aes(x = idade)) +
+g1 <- ggplot(dados, aes(x = idade)) +
   geom_histogram(color = "black", fill = "lightblue", bins = 20) +
   labs(
     title = "Histograma da variável Idade",
@@ -30,7 +30,7 @@ ggplot(dados, aes(x = idade)) +
   )
 
 #Boxplot da variável tempo_preso
-ggplot(dados, aes(x = "", y = tempo_preso)) +
+g2 <-ggplot(dados, aes(x = "", y = tempo_preso)) +
   geom_boxplot(fill = "lightblue", color = "black") +
   labs(
     title = "Boxplot da variável Tempo Preso",
@@ -44,7 +44,7 @@ ggplot(dados, aes(x = "", y = tempo_preso)) +
 
 
 #Agora o boxplot da variável score_periculosidade por escolaridade
-ggplot(dados, aes(x = escolaridade, y = score_periculosidade)) +
+g3 <- ggplot(dados, aes(x = escolaridade, y = score_periculosidade)) +
   geom_boxplot(fill = "lightblue") +
   scale_x_discrete(
     labels = c("1" = "Fundamental", 
@@ -62,7 +62,7 @@ ggplot(dados, aes(x = escolaridade, y = score_periculosidade)) +
   )
 
 #Gráfico de barras para a variável reincidente
-ggplot(dados, aes(x = reincidente)) +
+g4 <- ggplot(dados, aes(x = reincidente)) +
   geom_bar(fill = "lightblue", color = "black") +
   labs(
     title = "Frequência de Reincidência",
@@ -74,6 +74,13 @@ ggplot(dados, aes(x = reincidente)) +
     plot.title = element_text(hjust = 0.5)
   )
 
+#Salvando os gráficos em png
+dir.create("Gráficos") #Cria pasta onde estarão os png's
+
+ggsave("Gráficos/g1.png", plot = g1, width = 7, height = 5, dpi = 300)
+ggsave("Gráficos/g2.png", plot = g2, width = 7, height = 5, dpi = 300)
+ggsave("Gráficos/g3.png", plot = g3, width = 7, height = 5, dpi = 300)
+ggsave("Gráficos/g4.png", plot = g4, width = 7, height = 5, dpi = 300)
 
 
 
